@@ -1,0 +1,38 @@
+# Django and Django REST Framework
+Django==3.2.10
+djangorestframework==3.12.4
+django-cors-headers==3.10.0
+
+# JWT Authentication
+djangorestframework-simplejwt==4.8.0
+
+# Database adapter (if you're using PostgreSQL, otherwise you can remove this)
+psycopg2-binary==2.9.1
+
+# Environment variables management
+python-dotenv==0.19.1
+
+# WSGI server for production
+gunicorn==20.1.0
+
+# For handling image uploads (if needed)
+Pillow==8.4.0
+
+# For more advanced filtering capabilities in DRF
+django-filter==21.1
+
+# For API documentation (optional)
+drf-yasg==1.20.0
+
+# For background tasks (if needed)
+celery==5.1.2
+
+# For caching (if needed)
+redis==3.5.3
+
+# For testing
+pytest==6.2.5
+pytest-django==4.4.0
+
+# For development and debugging
+django-debug-toolbar==3.2.2

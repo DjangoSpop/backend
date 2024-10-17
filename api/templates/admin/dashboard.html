@@ -1,0 +1,37 @@
+{% extends "admin/base_site.html" %}
+
+{% block content %}
+<div class="module">
+    <h2>App Overview</h2>
+    <table>
+        <tr>
+            <th>Total Users</th>
+            <td>{{ total_users }}</td>
+        </tr>
+        <tr>
+            <th>Total Products</th>
+            <td>{{ total_products }}</td>
+        </tr>
+        <tr>
+            <th>Total Orders</th>
+            <td>{{ total_orders }}</td>
+        </tr>
+        <tr>
+            <th>Total Sales</th>
+            <td>${{ total_sales|floatformat:2 }}</td>
+        </tr>
+        <tr>
+            <th>Active Group Buys</th>
+            <td>{{ active_group_buys }}</td>
+        </tr>
+        <tr>
+            <th>Total Reviews</th>
+            <td>{{ total_reviews }}</td>
+        </tr>
+        <tr>
+            <th>Average Rating</th>
+            <td>{{ average_rating|floatformat:1 }}/5</td>
+        </tr>
+    </table>
+</div>
+{% endblock %}
